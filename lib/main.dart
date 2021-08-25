@@ -101,7 +101,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               child: Text(name),
             ),
             onTap: () {
-              Navigator.of(context).pushNamed('/');
+              Navigator.of(context).pushReplacementNamed('/');
             },
           ),
           SizedBox(
@@ -131,7 +131,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 child: OutlinedButton(
                   child: Text('Home'),
                   onPressed: () {
-                    Navigator.of(context).pushNamed('/');
+                    Navigator.of(context).pushReplacementNamed('/');
                   },
                 ),
               ),
